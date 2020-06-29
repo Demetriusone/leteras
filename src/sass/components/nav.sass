@@ -1,0 +1,77 @@
+.nav
+    &_header
+        background: $grey
+        height: 35px
+    &__inner
+        align-items: center 
+    
+.navbar
+    padding: 0  
+    z-index: 1000
+    background: #EFEEE9
+.navbar-expand-lg
+    width: 100%
+.navbar-nav
+    width: 100%
+.navbar-nav .nav-link
+    padding: 0         
+.nav-link
+    color: $color1
+    font-size: 16px
+    display: block
+    cursor: pointer
+    line-height: 35px
+    
+.navbar-nav
+    padding-left: 20px
+.navbar-nav li
+    margin-right: 5px
+    &:first-child  a
+        position: relative
+        padding-right: 1.5rem!important
+        color: red
+        &::after
+            content: ''
+            position: absolute
+            width: 14px
+            height: 8px
+            top: 14px
+            right: 1px
+            background: url(../img/header/menu/arrow_down.svg) no-repeat
+    &:last-child
+        margin-left: auto
+.navbar-collapse
+    &.show
+        .navbar-nav li
+            &:last-child
+                margin-left: 0
+        
+            
+.navbar-light .navbar-nav .nav-link
+    &.promo
+        color:#FF4C13
+    &.more
+        &::after
+            content: ''
+            box-sizing: border-box
+            height: 7px
+            width: 7px
+            border-radius: 50%
+            background: #ff4c00
+            display: inline-block
+            margin-left: 3px
+            margin-bottom: 8px
+
+     
+        
+    
+
+
+
+
+                    
+   
+           
+          
+            
+            

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>beeline@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-1490.000000, -928.000000)">
+            <g id="payments2017" transform="translate(1208.000000, 925.000000)">
+                <g id="beeline" transform="translate(282.000000, 3.000000)">
+                    <circle id="Oval" fill="#000000" cx="5.73718125" cy="5.77606875" r="5.66004375"></circle>
+                    <path d="M1.6492125,1.86373125 C1.031475,2.50904063 0.565303125,3.29985938 0.30695625,4.17992813 C3.92540625,4.0232625 7.54895625,4.0232625 11.1675656,4.17992813 C10.9092187,3.29985938 10.4428875,2.50904063 9.82515,1.86373125 C7.100475,1.7767125 4.37372812,1.7767125 1.6492125,1.86373125 L1.6492125,1.86373125 Z" id="Shape" fill="#F6AA26"></path>
+                    <path d="M0.299146875,7.34495625 C0.552234375,8.22343125 1.01187187,9.01393125 1.62275625,9.660675 C4.3649625,9.74865 7.10924063,9.74865 9.8512875,9.660675 C10.4623313,9.01377187 10.9219688,8.22327187 11.1750562,7.34495625 C7.55166562,7.50178125 3.92269687,7.50178125 0.299146875,7.34495625 L0.299146875,7.34495625 Z" id="Shape" fill="#F6AA26"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

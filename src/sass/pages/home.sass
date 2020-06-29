@@ -1,0 +1,448 @@
+.main
+    margin: 24px 0
+.content-book
+    &__title
+        line-height: 24px
+        display: block
+        h1
+            font-size: 18px
+            font-weight: bold
+            +xs
+                font-size: 16px
+            .label-text
+                background-color:#EBEBEB
+                color: $grey2
+            .label
+                border-radius: 12px
+                font-size: 11px
+                padding: 5px 7px
+                margin: 0 0 0 8px
+                text-transform: uppercase
+                position: relative
+                vertical-align: middle
+                opacity: 1
+                text-decoration: none
+                font-weight: normal
+    &__subtitle
+        color: $grey2
+        font-size: 16px
+        line-height: 19px
+        margin: 11px 0
+        +xs
+            font-size: 12px
+    &__author
+        font-size: 14px
+        line-height: 20px
+        &-title
+            padding: 0 5px 0 0 
+        &-link
+            color: #106edc
+            text-decoration: underline
+            cursor: pointer
+    &__cover
+        max-width: 430px
+        +xs
+            max-width: 320px
+    &__inner,&__cover
+        position: relative
+    &__inner
+        padding-right: 20px
+        &:hover
+            .sticker a
+                opacity: 0.01
+        .sticker a:hover
+            opacity: 1
+    &__carries
+        margin: 10px 0
+        display: flex
+        align-items: center 
+        color: #777
+        font-size: 12px
+        line-height: 30px
+        &-inner
+            margin: 0 auto
+    &__item
+        padding: 7px 0 7px 22px
+        position: relative
+        line-height: 16px
+        &-link
+            margin-right: 10px
+            text-decoration: none
+            color: $grey2
+    &__audio
+        &-match
+            width: 16px
+            height: 16px
+            cursor: pointer
+            display: inline-block
+            vertical-align: text-bottom
+            background: url(../img/content/download.svg) 0 0 no-repeat
+    &__img
+        border: 1px solid #cecdcc
+        max-width: 100%
+    &__actions
+        margin-bottom: 10px
+        width: 100%
+        &-flex
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+            margin: -5px
+            > *
+                margin: 5px
+            
+        &-link 
+            padding: 0 30px
+            +xs
+                padding: 0 66px
+        &-link, .art-box__top
+            display: flex
+            color: #767579
+            align-items: center
+            box-shadow: none
+            height: 50px
+            background-color: #f5f5f5
+            text-transform: uppercase
+            font-size: 14px
+            font-weight: bold
+            &:hover
+                color: #000
+                text-decoration: none
+                .read-icon svg
+                        .g-stroke
+                            stroke: #000
+            &.aciton_read
+                flex-grow: 1
+                border: 0 none
+                display: inline-block
+                text-decoration: none
+                color: $grey
+                text-overflow: ellipsis
+                border-radius: 3px
+            .read-icon svg
+                margin-right: 8px    
+    &__buy
+        display: block
+        width: 100%
+        font-size: 16px
+        font-weight: bold 
+        height: 50px
+        line-height: 18px
+        white-space: normal
+        button:hover
+            color: #fff
+        &-block
+            margin-bottom: 10px
+        &-ru
+            color: #b6deb6
+            font-weight: normal
+            vertical-align: middle
+    &__info
+        padding: 15px 85px 20px 0
+    &__list
+        list-style: none
+        &-item
+            font-size: 14px
+            line-height: 20px 
+            +sm
+                flex-direction: column
+                display: flex
+        &-link
+            font-style: italic
+            +xs
+                display: inline-block
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                vertical-align: middle
+                font-size: 11px  
+                max-width: 12em  
+            &:hover
+                color:#106edc
+/**end content book **/
+            
+.art-box
+    &__top
+    &__title
+        height: 100%
+        display: flex
+        padding: 0 5px
+        align-items: center 
+        padding: 0 15px
+        &:hover
+            .art-box__btn::before
+                background: url(../img/content/icon-favorite_hover.svg)
+    &__btn
+        font-size: 14px
+        height: 100%
+        display: block
+        font-weight: bold
+        line-height: 20px
+        box-shadow: none
+        color: #767579 
+        text-align: center
+        padding: 0 16px
+        text-transform: uppercase
+        &::before
+            margin-bottom: -3px
+            margin-right: 9px
+            width: 26px
+            height: 24px
+            background-position: center center
+            background: url(../img/content/icon-favorite.svg) 0 0 no-repeat
+            content: ''
+            display: inline-block
+        &:hover
+            color: #000
+        &-basket
+            height: 50px
+            display: block
+            width: 50px
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 10px
+                width: 21px
+                height: 20px
+                margin-right: 7px
+                background: url(../img/content/icon-basket.svg)   center center          
+    &__right
+        box-shadow: none
+        outline: none
+        height: 50px
+        background-color: #F5F5F5
+        border-radius: 0 3px 3px 0
+        width: 50px
+        cursor: pointer
+        position: relative
+        vertical-align: top
+        flex-shrink: 0
+        border-radius: 0 3px 3px 0
+        border-left: 1px solid #E1E1E1
+        &:hover
+            .art-box__btn-basket::before
+                background: url(../img/content/icon-basket_hover.svg)   center center   
+     
+.readart
+    &__wrapper
+        height: 50px
+        width: 100%
+        border-radius: 3px
+        background-color: #f5f5f5
+        margin: 10px 0
+        display: flex
+        justify-content: space-between
+        +xs
+            width: 30%
+    &__btn
+        text-align: center
+        flex: 1
+        color: #000
+        text-transform: uppercase
+        font-size: 14px
+        cursor: pointer
+        border-right: 1px solid #e1e1e1
+        font-weight: bold
+    &__more-btn
+        width: 50px
+        cursor: pointer
+        text-align: center
+        vertical-align: middle
+        line-height: 50px
+        border-radius: 0 3px 3px 0
+        &:hover
+            background: #E8E8E8
+    
+.bookforfriend
+    margin: 20px 0
+    width: 100%
+    +xs
+        width: 35%
+    &__btn
+        cursor: pointer
+        position: relative
+        height: 50px
+        background-color: #efeee9
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #767579
+        padding: 10px 15px 10px 0
+        border-radius: 3px
+        border: none
+        width: 100%
+        &-trumbsup
+            display: inline-block
+            margin-right: 15px
+            svg
+                vertical-align: 0
+        &-text
+            display: inline-block
+        &-title
+            display: block
+            text-transform: uppercase
+            font-weight: bold
+            color: #000
+            text-align: center 
+        &::after
+            content: ''
+            position: absolute
+            width: 14px
+            height: 8px
+            top: 21px
+            right: 19px
+            background: url(../img/content/arrow_down.svg) 0 0 no-repeat
+    
+.book-info
+    font-size: 16px
+    line-height: 25px
+    padding: 0 0 15px 0
+    &__caption
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 14px
+        font-weight: bold
+    &__block
+        li
+            line-height: 25px
+            font-size: 14px
+
+    &__block_left,&__block_right
+        list-style: none
+    &__seo
+        font-size: 14px
+        line-height: 25px
+        margin-bottom: 20px
+        +sm
+            width: 30%
+.book-intro
+    border-bottom: 1px #106EDC dashed
+    text-decoration: none
+    &:hover
+        text-decoration: none
+    
+/** begin recense **/
+.resenses
+    margin-bottom: 10px
+    &__title
+        font-size: 18px
+        line-height: 20px
+        font-weight: bold
+        padding: 16px 0 15px 0
+    &__content
+        +sm
+            p
+                font-size: 10px
+.resense
+    display: flex
+    &__avatar
+        height: 40px
+        width: 40px
+        display: block
+        flex-shrink: 0
+        background: #c4c3c5
+        border-radius: 50%
+        line-height: 40px
+        text-transform: uppercase
+        text-align: center
+        text-transform: uppercase
+        color: #fff
+        font-size: 18px
+        font-weight: bold
+        margin: 6px 0 0 12px
+        +sm
+            display: none
+    +xs
+        p
+            font-size: 14px
+            width: 25%
+    &__body
+        margin-left: 38px
+    &__head
+        white-space: nowrap
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        padding-bottom: 20px
+    &__date
+        text-align: right
+        color: #a5a5a5
+        font-size: 14px
+    &__author
+        font-size: 16px
+        counter-style: italic 
+        color: #106edc
+        text-decoration: underline 
+        font-weight: normal
+        cursor: pointer 
+        max-width: 65%
+        white-space: nowrap
+        text-overflow: ellipsis
+    &__content
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: -10px
+    &__rating
+        font-size: 16px
+        font-weight: bold
+        color: #0e920e
+        display: inline-block
+        margin-right: 13px
+        vertical-align: middle
+    &__bot
+        display: flex
+    &__report
+        margin-left: auto
+    .toolbox
+        margin-left: 10px
+    &__report,.toolbox, &__share
+        opacity: 0
+        visibility: hidden
+    &:hover
+        .resense__report,.toolbox, .resense__share
+            opacity: 1
+            visibility: visible
+        .resense__avatar
+            background: #000
+    &__report
+        font-size: 14px
+        font-family: Arial
+        font-size: 14px
+        font-style: italic
+.resense-add
+    padding: 10px 0
+    position: relative
+    background: #efeee9
+    &::before
+        top: 0
+    &::before
+        content: ''
+        position: absolute
+        height: 10px
+        width: 100%
+        background: url(../img/content/bg/bg_triangle.png) 0 0 repeat-x
+        background-image: url(../img/content/bg/bg_triangle.svg)
+
+        
+
+
+
+
+
+
+.read-icon
+    display: flex
+    align-items: center             
+
+              
+                
+
+
+
+
+            
+
+

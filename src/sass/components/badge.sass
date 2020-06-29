@@ -1,0 +1,42 @@
+.badge
+    padding: 10px 0 30px 0
+    &__title
+        font-size: 18px
+        font-weight: bold
+        line-height: 22px
+        padding: 0 0 14px 0
+    &__list
+        list-style: none
+        &-item
+            font-size: 14px
+            line-height: 16px
+            padding: 0 0 0 26px
+            margin-bottom: 10px
+            font-weight: normal
+            cursor: pointer
+            position: relative
+            text-align: left
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 16px
+                height: 16px
+                background-repeat: no-repeat
+                background-size: 16px 16px
+            &_best
+                &::before
+                    background: url(../img/content/best.svg)
+            &_hit
+                &::before
+                    background: url(../img/content/hit.svg)
+
+
+                
+
+
+
+
+
+

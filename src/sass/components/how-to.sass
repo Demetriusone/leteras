@@ -1,0 +1,104 @@
+.how-to
+    width: 100%
+    margin: 10px 0
+    background: $grey4
+    padding: 10px 20px 10px 20px
+    margin-bottom: 10px
+    border-radius: 3px
+    width: 100%
+    +xs
+        width: 30%
+    &__caption
+        color: $grey3
+        font-size: 13px
+        line-height: 20px
+        margin-bottom: 10px
+        text-transform: uppercase
+        font-weight: bold
+    &__devices
+        display: flex
+        +sm
+            display: none
+    &__link
+        font-size: 12px
+        line-height: 16px
+        color: #777
+        height: 40px
+        display: flex
+        align-items: center
+        &_smartphone
+            padding-left: 73px
+            width: 247px
+            background: url(../img/content/ios-andorid.svg) 2px center no-repeat
+            background-image: url(../img/content/ios-android.svg)
+            +xs
+                padding-left: 60px 
+        &_notebook
+            width: 147px
+            padding-left: 50px
+            padding-right: 10px
+            background: url(../img/content/notebook.svg) 2px center no-repeat
+            background-image: url(../img/content/notebook.svg)
+            +xs
+                padding-left: 45px
+        &_reader
+            background: url(../img/content/reader.svg) 2px center no-repeat
+            background-image: url(../img/content/reader.svg) 
+            padding-left: 28px
+            +xs
+                padding-left: 20px
+    &__download
+        list-style: none
+        margin: 0
+        li:first-child
+            color: #98979a
+            margin-right: 9px
+        li
+            font-size: 13px
+            line-height: 20px
+            display: inline
+            margin-right: 15px
+            color: #98979a
+            line-height: 20px
+            a
+                color: #727175
+                font-weight: bold
+                &:hover
+                    color: $blue
+                    text-decoration: underline
+    &__fragment
+        margin: 10px 0
+        &-link
+            border: 2px solid #3b393f
+            font-size: 16px
+            height: 50px
+            display: block
+            line-height: 50px
+            cursor: pointer
+            text-align: center
+            position: relative
+            width: 100%
+            color: #000
+            text-transform: uppercase
+            font-weight: bold
+            border-radius: 3px
+            &::before
+                content: ''
+                display: inline-block
+                vertical-align: top
+                border: 6px solid transparent
+                border-left: 12px solid #3b393f
+                margin: 18px 10px 0 0 
+            &:hover
+                text-decoration: none
+                color: #000
+                    
+
+            
+                
+
+            
+            
+            
+            
+    

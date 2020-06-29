@@ -1,0 +1,108 @@
+.form-control
+    padding: 0 30px 0 20px
+
+.search
+    display: flex
+    &__inner
+        display: flex
+        width: 100%
+    &__form
+        &-input
+            letter-spacing: -0.04px
+            line-height: 18px
+            height: 40px
+            width: 100%
+            font-size: 16px
+            padding-left: 9px
+            border-right: none
+            border-radius: 3px 0 0 3px
+            
+        &-field
+            margin-right: 20px
+            display: flex
+            position: relative
+            flex: 1
+    &__btn
+        height: 40px
+        width: 90px
+        font-size: 15px
+        line-height: 16px
+        border-radius: 0 3px 3px 0
+    
+
+
+.user
+    margin-left: 10px
+    &__link
+        padding-right: 25px
+    &__logo
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        overflow: hidden
+        display: inline-block
+        vertical-align: middle
+        &-wrapper
+            width: 40px
+            height: 40px
+            margin-right: 10px
+            position: relative
+    &__avatar
+        display: block
+        width: 40px
+        height: 40px
+        background: url(../img/header_sprite.png) no-repeat 0px -60px
+        background-image: url(../img/header_sprite.png)
+        padding-top: 1px
+    &__wrapper
+        color: $color1
+        text-decoration: none
+        white-space: nowrap
+        display: flex
+        align-items: center
+    &__container
+        max-width: calc(100% - 50px)
+        text-overflow: ellipsis
+        overflow: hidden
+        line-height: 18px
+
+
+.user-info
+    position: relative
+    justify-content: flex-end
+    &__icon
+        display: inline-block
+        height: 33px
+        width: 28px
+        background: url(../img/header_sprite.png) no-repeat -70px -60px
+        background-image: url(../img/header_sprite.svg)
+        top: 2px
+    &__sticker
+        position: absolute
+        background-color: $accent
+        color: #fff
+        font-size: 12px
+        height: 24px
+        width: 24px
+        border: 2px solid #fff
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center 
+        border-radius: 50%
+        top: -14px
+        right: -9px
+        &_button
+            background: transparent
+
+.user-action
+    margin-left: 27px
+    display: flex
+    &__btn
+        height: 40px
+        font-size: 14px
+        
+        
+    
+
+        

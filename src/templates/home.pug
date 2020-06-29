@@ -1,0 +1,571 @@
+extends layouts/_layout
+
+block variables
+	-title = 'Отзывы о книге Тонкое искусство пофигизма, Марк Мэнсон – ЛитРес'
+	-bodyClass = 'body'
+	-headerClass = 'headerclass'
+	
+
+block content
+	
+
+	//begin main
+	+b.MAIN.main
+		+e.page
+			+b.breadcams-container.container.container-md.container-sm
+				+b.UL.breadcrumbs
+					+e.LI.item
+						+e.A.item-link(href='#')
+							span Книги
+					+e.LI.item
+						+e.A.item-link(href='#')
+							span Зарубежная психология
+					+e.LI.item
+						+e.A.item-link(href='#')
+							span Марк Менсон
+					+e.LI.item
+						+e.A.item-link(href='#')
+							span Тонкое искусство пофигизма
+				+b.content-book.row
+					+e.left.col-md-5.col-sm
+						+e.cover
+							+e.inside
+								+e.inner
+									+e.A._link(href='#')
+										+e.IMG.img(src='img/content/mark-menson.jpg' alt='Тонкое исскуство пофигизма')
+									SPAN.sticker.book_icons
+										SPAN.icon_adult
+											SPAN 16+
+											
+									SPAN.sticker.flags
+										A.flag_best(href="#")
+											SPAN.flag_icon
+											SPAN.flag_text Бестселлер
+										A.flag_hit(href="#")
+											SPAN.flag_icon
+											SPAN.flag_text Хит продаж
+							+e.carries
+								+e.carries-inner
+									+e.item
+										+e.A.item-link._with-audio(href='#')
+											SPAN.type.type_audio 1 Аудиокнига
+												SPAN.simple-price 244,30
+													SPAN.currency.litres_ruble ₽
+										+e.audio-match
+									+e.item
+										+e.A.item-link(href='#')
+											SPAN.type.type_hardcopy 1 Бумажная версия
+												SPAN.simple-price 476
+													SPAN.currency.litres_ruble ₽
+					+e.right.col-md-5.col-sm-5
+						+e.title
+							h1 Тонкое исскуство пофигизма
+								SPAN.label.label-text Текст
+						+e.P.subtitle Парадоксальный способ жить красиво
+						+e.author
+							+e.SPAN.author-title Автор
+							+e.A.author-link(href='#') Марк Мэнсон
+						+b.rating._content-book
+							+e.text-wrapper
+								+e.SPAN.number.bottomline-rating 4,2
+								+e.SPAN.icon.rating-icon
+									svg(aria-hidden='true', xmlns='http://www.w3.org/2000/svg', version='1.1', viewBox='0 0 30 29', height='29px', width='30px')
+										g(fill-rule='evenodd', fill='none', stroke-width='1', stroke='none')
+											g(fill='#FF4C00', stroke='#FF4C00', stroke-width='2', fill-rule='nonzero', transform='translate(-441.000000, -51.000000)')
+												g(transform='translate(441.000000, 51.000000)')
+													path(d='M6.63927656,27.2087237 L15,22.1735129 L23.3607234,27.2087237 C23.5552531,27.3258783 23.787812,27.1596746 23.740838,26.9655059 L21.4620737,17.5461352 L28.9168739,11.2496986 C29.0740235,11.1169676 28.9915659,10.8673347 28.7695949,10.8497885 L18.9999096,10.0775215 L15.2328714,1.14726272 C15.1500453,0.950912427 14.8499547,0.950912427 14.7671286,1.14726272 L11.0000904,10.0775215 L1.23040508,10.8497885 C1.00843411,10.8673347 0.925976492,11.1169676 1.08312613,11.2496986 L8.53792635,17.5461352 L6.25916195,26.9655059 C6.21218804,27.1596746 6.44474689,27.3258783 6.63927656,27.2087237 Z')
+								+e.SPAN.votes-count.bottomline-ratin-coun 14 290
+							+e.SPAN.devider.devider-line
+							+e.text-wrapper.livelib
+								+e.SPAN.number.bottomline-rating.livelib 3,9
+								+e.SPAN.icon._livelib
+									svg(xmlns='http://www.w3.org/2000/svg', fill='none', viewBox='0 0 34 24', height='24', width='34')
+										path(fill='url(#paint0_linear)', d='M18.5928 23.5666C21.8014 21.6491 26.0334 19.1094 27.5336 18.2184C29.0338 17.3274 30 16.593 30 14.9529C30 13.3129 29.9903 3.19137 29.9903 1.77455C29.9903 0.357725 28.6991 -0.564133 27.0742 0.391706C25.6601 1.22349 17.0006 6.41654 17.0006 6.41654C17.0006 6.41654 8.51852 1.32914 6.92751 0.391706C5.3365 -0.545733 4.01119 0.330413 4.01119 1.78616C4.01119 3.24191 4.00551 13.9215 4 14.9501C4 16.6151 5.02087 17.3358 6.46614 18.2184C7.91141 19.101 12.1582 21.6577 15.4129 23.5666C15.6656 23.7148 16.202 24 17.0018 24C17.8016 24 18.3678 23.701 18.5928 23.5666Z', clip-rule='evenodd', fill-rule='evenodd')
+										defs
+											lineargradient#paint0_linear(gradientUnits='userSpaceOnUse', y2='9.75099', x2='4', y1='9.74932', x1='30')
+												stop(stop-color='#3E99ED')
+												stop(stop-color='#59C7FF', offset='1')
+								+e.SPAN.votes-count.bottomline-ratin-count 11 338		
+							+e.SPAN.devider.devider-line
+							+e.text-wrapper.comments
+								+e.SPAN.comments.bottomline-rating 1040
+									+e.SPAN.icon
+										svg(width='17px', height='16px', viewBox='0 0 17 16', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+											g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+												g(transform='translate(-209.000000, -132.000000)')
+													g(transform='translate(40.000000, 130.000000)')
+														g(transform='translate(153.000000, 0.000000)')
+															g
+																g(transform='translate(16.000000, 2.000000)')
+																	path.svg-recenses(d='M0,1.0002 L0,11.0002 C6.76353751e-17,11.5524847 0.44771525,12.0002 1,12.0002 L3,12.0002 L3,14.8718398 C3,15.4241246 3.44771525,15.8718398 4,15.8718398 C4.23397588,15.8718398 4.46054436,15.789796 4.64027244,15.6399877 L9.007,12.0002 L16,12.0002 C16.5522847,12.0002 17,11.5524847 17,11.0002 L17,1.0002 C17,0.44791525 16.5522847,0.0002 16,0.0002 L1,0.0002 C0.44771525,0.0002 -6.76353751e-17,0.44791525 0,1.0002 Z', fill='#3B393F')
+																	path(d='M4,4 L13,4', stroke='#FFFFFF', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+																	path(d='M4,8 L11,8', stroke='#FFFFFF', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+									+e.SPAN.recenses.recenses-label Отзывы
+						+e.wrap
+							+e.actions
+								+e.actions-flex
+									+e.A.actions-link.action-read.light_actions.button_hight(href='#') 
+										SPAN.read-icon
+											svg(width='20px', height='17px', viewBox='0 0 20 17', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+												g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd', stroke-linecap='round', stroke-linejoin='round')
+													g.g-stroke(stroke='#767579',transform='translate(-2867.000000, -858.000000)')
+														g(transform='translate(2862.000000, 851.000000)')
+															g(transform='translate(6.000000, 8.000000)')
+																path(d='M9,4.00323486 C9,0.497843416 11.989624,0 14,0 L17.5092223,0 C17.7802713,0 18,0.225639343 18,0.493741035 L18,12.506259 C18,12.7789446 17.7744034,13 17.4990206,13 C17.4990206,13 17.4860077,13 14,13 C10.0021973,13 9,15.0008545 9,15.0008545 C9,15.0008545 9,7.35675049 9,4.00323486 Z', stroke-width='2')
+																path(d='M8.11371898e-16,4.00323486 C3.97897696e-15,0.497843416 2.98962402,0 5,0 L8.50922226,0 C8.78027132,0 9,0.225639343 9,0.493741035 L9,12.506259 C9,12.7789446 8.7744034,13 8.49902055,13 C8.49902055,13 8.48600769,13 5,13 C1.00219727,13 4.11731557e-15,15.0008545 4.11731557e-15,15.0008545 C4.11731557e-15,15.0008545 -2.19403652e-15,7.35675049 8.11371898e-16,4.00323486 Z', stroke-width='2', transform='translate(4.500000, 7.500427) scale(-1, 1) translate(-4.500000, -7.500427) ')
+											| Читать фрагмент
+									+b.art-box.light_actions.art-box_actions
+										+e.__top.action-read
+											+e.__title
+												form(method='post')
+													+e.BUTTON.btn._buttons-favorite Отложить
+											+e.right._action
+												+e.A.btn-basket 
+							+e.buy-block
+								+e.buy
+									+e.BUTTON.btn.btn_green.coolbtn
+										SPAN.uppercase Купить и скачать за &nbsp
+										SPAN.simple-price 299
+											SPAN.currency.litres_ruble ₽
+										+e.buy-ru 
+											|&nbsp(
+											SPAN.simple-price
+												SPAN.currency  &#8364
+												| 3,81
+											|&nbsp)
+							+b.payments.payments_content-book
+								+e.A.link._mastercard(href="#" title='mastercard') MasterCard
+								+e.A.link._visa(href="#" title='visa') Visa
+								+e.A.link._qiwi(href="#" title='qiwi') QIWI кошелек
+								+e.A.link._paypal(href="#" title='paypal') PayPal
+								+e.A.link._webmoney(href="#" title='webmoney') WebMoney
+								+e.A.link._yandex(href="#" title='yandex-money') Яндекс.Деньги
+								+e.A.link._alfa(href="#" title='alfa') Альфабанк
+								+e.A.link._mts(href="#" title='mts') МТС
+								+e.A.link._beeline(href="#" title='beeline') Билайн
+								+e.A.link._megafon(href="#" title='megafon') Мегафон
+								+e.A.link._tele2(href="#" title='tele2') Tele2
+								+e.A.link._apple(href="#" title='applepay') ApplePay
+							+b.readart.readart_content-book
+								+e.wrapper
+									+e.BUTTON.btn Отметить прочитанной
+									+e.BUTTON.more-btn
+										svg(width='28px', height='6px', viewBox='0 0 28 6', version='1.1', xmlns='http://www.w3.org/2000/svg')
+											g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+												g(transform='translate(-301.000000, -577.000000)', fill='#767579')
+													g(transform='translate(40.000000, 555.000000)')
+														g(transform='translate(249.000000, 0.000000)')
+															path(d='M15,28 C13.3431458,28 12,26.6568542 12,25 C12,23.3431458 13.3431458,22 15,22 C16.6568542,22 18,23.3431458 18,25 C18,26.6568542 16.6568542,28 15,28 Z M26,28 C24.3431458,28 23,26.6568542 23,25 C23,23.3431458 24.3431458,22 26,22 C27.6568542,22 29,23.3431458 29,25 C29,26.6568542 27.6568542,28 26,28 Z M37,28 C35.3431458,28 34,26.6568542 34,25 C34,23.3431458 35.3431458,22 37,22 C38.6568542,22 40,23.3431458 40,25 C40,26.6568542 38.6568542,28 37,28 Z')
+							+b.how-to.how-to_content-book
+								+e.H2.caption Как читать книгу после покупки 
+								+e.devices.how-to_devices
+									+e.A.link._smartphone Смартфон,
+										br
+										| планшет
+									+e.A.link._notebook Комьютер
+										br
+										| ноутбук
+									+e.A.link._reader Ридер
+								+e.UL.download
+										LI.uppercase
+											strong Скачать
+										LI
+											A(href='#') FB2
+										LI
+											A(href='#') EPUB
+										LI
+											A(href='#') iOS.EPUB
+										LI
+											A(href='#') Ещё 7
+								.devider
+								+e.H2.caption Нет времени на книгу ? 
+								+e.fragment
+									+e.A.fragment-link(href='#') Слушать фрагмент
+							+b.bookforfriend
+								+e.BUTTON.btn
+									+e.SPAN.btn-trumbsup
+										svg(width='24px', height='29px', viewBox='0 0 24 29', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+											g(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd', stroke-linecap='round', stroke-linejoin='round')
+												g(transform='translate(-76.000000, -22.000000)', stroke='#FF4C00', stroke-width='2')
+													g
+														path(d='M96.4070783,46.074154 C96.5613553,46.4220155 96.6470588,46.8078725 96.6470588,47.2142857 C96.6470588,48.7493065 95.4126821,50 93.8857635,50 L82.7034907,50 C81.7881399,50 80.628562,49.5110822 79.9817121,48.8565317 L77,45.8393231 L77,36.4585864 L77.576842,36.1891822 C77.6204543,36.1688138 77.7205071,36.1178907 77.8688694,36.0352706 C78.1268952,35.8915808 78.4172792,35.7138157 78.7319252,35.5009014 C79.63881,34.8872316 80.5482245,34.119326 81.3968195,33.1892908 C83.5987552,30.7760337 85.0035068,27.7218936 85.2371961,23.9383528 L85.2951532,23 L86.2352941,23 C88.7608581,23 90.259134,24.21289 90.7355165,26.1411051 C90.934771,26.9476113 90.934771,27.7765385 90.8192563,28.5558041 C90.7898456,28.7542094 90.7591176,28.9062238 90.7503502,28.9307398 L89.9309569,33.7142857 L96.2277194,33.7142857 C97.762268,33.7142857 99,34.9580827 99,36.5 C99,37.3548051 98.6177657,38.1200793 98.0145215,38.6312145 C98.2667744,39.0511059 98.4117647,39.5437972 98.4117647,40.0714286 C98.4117647,40.9263299 98.0296774,41.6914557 97.4263951,42.2025167 C97.6785822,42.6224528 97.8235294,43.1151989 97.8235294,43.6428571 C97.8235294,44.6867299 97.2535087,45.5970866 96.4070783,46.074154 Z')
+									+e.SPAN.btn-text
+										+e.btn-title Посоветуйте книгу друзьям
+										| Друзьям - скидка 10%, вам - рубли
+						// book info begin
+						+e.info
+							+e.UL.list
+								+e.LI.list-item
+									STRONG Объём:
+									|   180 стр. 1 иллюстрация
+								+e.LI.list-item
+									STRONG Жанр:
+									+e.A.list-link(href='#') Зарубежная психология
+										|,
+									+e.A.list-link(href='#') Саморазвитие / личностный рост
+										|,
+									+e.A.list-link(href='#')  Социальная психология
+								+e.LI.list-item.tag-list
+									STRONG Теги:
+									+e.A.list-link(href='#')  Бестселлеры «New York Times»
+										|,
+									+e.A.list-link(href='#')  Борьба со стрессом
+										|,
+									+e.A.list-link(href='#')  Поиск предназначения
+										|,
+									+e.A.list-link(href='#')  Самореализация
+									A.multi-factor__link(href='#') Редактировать 
+						+b.badge
+							+e.H2.title Достижения и награды
+							+e.UL.list
+								+e.list-item._best Бестселлер
+								+e.list-item._hit Хит продаж
+				+b.UL.nav.nav-tabs#myTab(role='tablist')
+							LI.nav-item
+								A.nav-link#home-tab.active(data-toggle='tab' href="#home" role='tab' aria-controls="home" aria-selected="true") О книге
+							LI.nav-item
+								A.nav-link#profile-tab(data-toggle='tab' href="#profile" role='tab' aria-controls="profile" aria-selected="false") Отзывы
+									SPAN.count 1040
+				+b.tab-content
+					.tab-content__tab.tab-pane.active#home(role='tabpanel' aria-labelledby="home-tab") 
+						.tab-container.container.md-container.sm-container
+							.tab-content_about 
+								.tab-content_frame
+									.tab-content_frame-item
+										IFRAME(src='https://www.youtube.com/embed/ib0NcKu-y8E' width='560' height='315' frameborder='0' allowfullscreen)
+							.tab-content_book
+								H2.tab-content_book-title Описание книги
+								p.tab-content_book-descr Современное общество пропагандирует культ успеха: будь умнее, богаче, продуктивнее – будь лучше всех. Соцсети изобилуют историями на тему, как какой-то малец придумал приложение и заработал кучу денег, статьями в духе «Тысяча и один способ быть счастливым», а фото во френдленте создают впечатление, что окружающие живут лучше и интереснее, чем мы. Однако наша зацикленность на позитиве и успехе лишь напоминает о том, чего мы не достигли, о мечтах, которые не сбылись. Как же стать по-настоящему счастливым? Популярный блогер Марк Мэнсон в книге «Тонкое искусство пофигизма» предлагает свой, оригинальный подход к этому вопросу. Его жизненная философия проста – необходимо научиться искусству пофигизма. Определив то, до чего вам действительно есть дело, нужно уметь наплевать на все второстепенное, забить на трудности, послать к черту чужое мнение и быть готовым взглянуть в лицо неудачам и показать им средний палец.
+							+b.toolbox.addthis_30x30_style
+								+e.A.item(href='#' title='Вконтакте')
+									+e.item_vk
+								+e.A.item(href='#' title='Однокласники')
+									+e.item_ok
+								+e.A.item(href='#' title='Facebook')
+									+e.item_fb
+								+e.A.item(href='#' title="Twitter")
+									+e.item_twitter
+								+e.A.item(href='#' title='Маил ру')
+									+e.item_mail
+								+e.A.item(href='#' title='LiveJournal')
+									+e.item_lj
+								+e.A.item_counter(href='#')
+									+e.item_counter-expended 2
+							+b.book-info
+								+e.H2.caption Подробная информация 
+								+e.block.row
+									+e.UL.block_left.col-md-4
+										li
+											strong Возрастное ограничение 
+											| 16+
+										li
+											strong Дата выхода на ЛитРес: 
+											|  04 сентября 2017
+										li
+											strong Дата перевода: 
+											|   2017
+										li
+											strong Дата написания: 
+											|   2016
+										li.volume
+											strong Объем:
+											|  180 стр. 1 иллюстрация
+
+									+e.UL.block_right.col-md-4
+										li
+											strong ISBN: 
+											span 9785961448986
+										li
+											strong Переводчик: 
+											a(href='#') Глеб Ястребов
+										li
+											strong Правообладатель: 
+											a(href='#') Альпина Диджитал
+										li
+											a.book-intro(href='#') Оглавление
+
+								+e.P.seo Книга Марка Мэнсона «Тонкое искусство пофигизма» — скачать в fb2, txt, epub, pdf или читать онлайн. Оставляйте комментарии и отзывы, голосуйте за понравившиеся
+							//begin resenses
+							+b.resenses
+								+e.container.container.book-info_wrapper
+									+e.H3.title Лучший отзыв
+									+b.resense._best
+										+e.avatar d
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') dimas-popov
+
+													
+											+e.content
+											p Книгу однозначно стоит прочесть, потому что она мотивирует. Другой вопрос – способна ли она кардинально изменить вашу жизнь к лучшему? Скорее, это просто порция подбадривания, но не само лекарство от несчастья. Если читать что-то для старта новой и счастливой жизни, нужно выбирать другие книги. Я бы рекомендовал «Все взрослые несчастны» Кары Линн и «Аскетизм» Патрика Холла.
+											+e.bot
+												+e.SPAN.rating
+													SPAN +969
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+									+e.H3.title Отзывы
+									+b.resense._best
+										+e.avatar М
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') Милана
+
+													
+											+e.content
+											p Браво!!! 
+												|ушел муж, оставил с двумя детьми, депрессия глубокая… Как-то в автобусе наткнулась на эту книгу. Прочла за сутки. Близкие и коллеги заметили изменения, я стала жить после недели и второго прочтения. Мне хочется жить, дышать и радоваться, работать, все нести на своих плечах. Даже спина выпрямилась. Хочется лично сказать спасибо автору и пожать ему руку.
+											+e.bot
+												+e.SPAN.rating
+													SPAN +969
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+									+b.resense._best
+										+e.avatar d
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') dimas-popov
+
+													
+											+e.content
+											p Книгу однозначно стоит прочесть, потому что она мотивирует. Другой вопрос – способна ли она кардинально изменить вашу жизнь к лучшему? Скорее, это просто порция подбадривания, но не само лекарство от несчастья. Если читать что-то для старта новой и счастливой жизни, нужно выбирать другие книги. Я бы рекомендовал «Все взрослые несчастны» Кары Линн и «Аскетизм» Патрика Холла.
+											+e.bot
+												+e.SPAN.rating
+													SPAN +969
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+					.tab-content_reviews.tab-content__tab.tab-pane#profile(role='tabpanel' aria-labelledby="profile-tab")
+						+b.resenses
+								+e.container.container.book-info_wrapper
+									+e.H3.title Лучший отзыв
+									+b.resense._best
+										+e.avatar Е
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') Елена Мамонова	
+											+e.content
+											p Мне всегда импонировали люди, которые легко справляются с проблемами, несмотря на их сложность. Поэтому книга с таким названием как «Тонкое искусство пофигизма» сразу же привлекла моё внимание.
+											p Не могу сказать, что этот труд открыл для меня что-то новое. По большей части книга представляет собой авторское переложение в шутливо-дерзкой форме уже давно известных принципов позитивного мышления. Хотя, нужно признать, несколько классических постулатов были поданы с необычного ракурса, а потому зацепили.
+											p Например, Марк Мэнсон справедливо утверждает, что «внушать себе позитивные мысли когда всё плохо – это просто загонять проблему глубже». Понятно, почему аффирмации в моём случае не работали. Обманывать себя, стоя перед зеркалом, повторяя их снова и снова, глупо и не даёт никакого результата. Нужно принимать проблему и решать её. Только так появится вера в себя.
+											p Например, Марк Мэнсон справедливо утверждает, что «внушать себе позитивные мысли когда всё плохо – это просто загонять проблему глубже». Понятно, почему аффирмации в моём случае не работали. Обманывать себя, стоя перед зеркалом, повторяя их снова и снова, глупо и не даёт никакого результата. Нужно принимать проблему и решать её. Только так появится вера в себя.
+											p Во-вторых, по мнению Марка Мэнсона, «страдать для человека вполне естественно», это своего рода биологический двигатель, заставляющий действовать. В этом тоже есть разумное зерно: так, стоит человеку заболеть и он сразу находит время и силы, чтобы заняться собой и своим здоровьем. Поэтому страдания следует не избегать, а использовать их как указатели для развития.
+											p Что же касается отношения к жизни с точки зрения пофигизма – это вовсе не значит быть ко всему безразличным. Это значит правильно расставлять приоритеты, выбрав из множества то, что действительно важно, не распаляясь на сиюминутное и модное.
+											p «Тонкое искусство пофигизма» – это лёгкое, незамысловатое чтение, которое идеально подойдёт для тех, кому нужен хороший и даже в какой-то степени грубый пинок, а не глубокий интеллектуальный разговор с философским налётом. И такой подход тоже имеет право быть, в конце концов, все мы люди разные, а значит, каждому нужен свой подход к решению проблем.
+											+e.bot
+												+e.SPAN.rating
+													SPAN +326
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+									+b.resense._best
+										+e.avatar М
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') muterko_m
+
+													
+											+e.content
+											p Адаптация буддизма под современность, удивительно как множество современных людей не задумывается вообще ни о чем кроме потребительских целей. Для того чтобы это множество задумалось, конечно ему необходима такая (или подобная книга). Простое, и многим очевидное собрано в одном месте. Конечно ничего философского в книге нет, просто автор призвал к здравому смыслу.
+											+e.bot
+												+e.SPAN.rating
+													SPAN +139
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+									+b.resense._best
+										+e.avatar T
+										+e.body
+											+e.head
+												+e.SPAN.date 28 мая 2019, 11:48
+												+e.SPAN.author
+													a(href='#') Татьяна	
+											+e.content
+											p Нетривиально вышло, респект. Автор философски переосмысляет человеческую жизнь. Это могло бы звучать скучно – но он делает это очень живо и необычно, с жизненными примерами, критикой «позитивного мышления» и жёсткими выражениями. И… Мне понравилось!Жизнеутверждающая, глубокая, клёвая книга.	
+											+e.bot
+												+e.SPAN.rating
+													SPAN +969
+												+e.SPAN.vote.vote_good
+												+e.SPAN.vote.vote_bad
+												+e.SPAN.share Поделится 
+												+b.toolbox.addthis_30x30_style
+													+e.A.item(href='#' title='Вконтакте')
+														+e.item_vk
+													+e.A.item(href='#' title='Однокласники')
+														+e.item_ok
+													+e.A.item(href='#' title='Facebook')
+														+e.item_fb
+													+e.A.item(href='#' title="Twitter")
+														+e.item_twitter
+													+e.A.item(href='#' title='Маил ру')
+														+e.item_mail
+													+e.A.item(href='#' title='LiveJournal')
+														+e.item_lj
+												+e.A.report._abuse(href='#') Пожаловаться
+			
+				
+
+
+
+							
+						
+
+
+									
+
+
+
+										
+
+
+								
+
+									
+									
+
+
+
+									
+							
+			
+
+
+
+
+
+
+
+							
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									
+
+									
+
+
+
+
+
+
+
+							
+
+
+
+
+
+
+									
+
+
+
+
+
+				
+				
+			
+
+ 	
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>yandex@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0.00323450135 0.0473655914 11.4027493 0.0473655914 11.4027493 15 0.00323450135 15"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Иконки" transform="translate(-1420.000000, -926.000000)">
+            <g id="payments2017" transform="translate(1208.000000, 925.000000)">
+                <g id="yandex" transform="translate(212.000000, 1.000000)">
+                    <g id="Group-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M0.000161725067,7.46451613 C0.000161725067,6.62489247 0.0707277628,6.09209677 1.81423181,4.79408602 C3.25768194,3.71951613 7.88431267,0.0473655914 7.88431267,0.0473655914 L7.88431267,6.17736559 L11.4027493,6.17736559 L11.4027493,15 L1.09913747,15 C0.494716981,15 0,14.5066129 0,13.9037634 L0.000161725067,7.46451613" id="Fill-1" fill="#FACA21" mask="url(#mask-2)"></path>
+                    </g>
+                    <polyline id="Fill-4" fill="#CAA620" points="7.88431267 6.17736559 7.88431267 9.72924731 1.41892183 14.1219892 9.59326146 11.4694624 9.59326146 6.17736559 7.88431267 6.17736559"></polyline>
+                    <path d="M4.92981132,5.99365591 C5.30787062,5.54435484 5.86005391,5.38569892 6.1632345,5.63946237 C6.46641509,5.89322581 6.4058221,6.46322581 6.02770889,6.91252688 C5.64986523,7.36177419 5.09752022,7.52021505 4.79433962,7.26645161 C4.49110512,7.01274194 4.55185984,6.44290323 4.92981132,5.99365591" id="Fill-5" fill="#6F909D"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -318,7 +318,7 @@
         margin-bottom: 14px
         font-weight: bold
     &_wrapper
-        width: 50%
+        width: 100%
     &__block
         li
             line-height: 25px
@@ -331,7 +331,7 @@
         line-height: 25px
         margin-bottom: 20px
         +sm
-            width: 30%
+            width: 100%
 .book-intro
     border-bottom: 1px #106EDC dashed
     text-decoration: none
@@ -379,16 +379,26 @@
             width: 25%
     &__body
         margin-left: 38px
+        +xs
+            margin-left: 0
+            display: flex
+            flex-direction: column
     &__head
         white-space: nowrap
         display: flex
         flex-direction: row-reverse
         justify-content: space-between
         padding-bottom: 20px
+        +xs
+            display: flex
+            flex-direction: column
+            text-align: left
     &__date
         text-align: right
         color: #a5a5a5
         font-size: 14px
+        +xs
+            max-width: 320px
     &__author
         font-size: 16px
         counter-style: italic 
